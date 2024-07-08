@@ -1,38 +1,142 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  font-family: '맑은 고딕', sans-serif;
+}
+
+.HeaderFrame {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ContentFrame {
+  height: 90%;
+  width: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+  padding: 20px;
+}
+
+.tileCss {
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.OurGameRank {
+  background-color: white;
+}
+
+.GameRankTable {
+  height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.RankGameDday {
+  background-color: white;
+}
+
+.CalculateTier {
+  background-color: white;
+  height: 100%;
+}
+
+.CalculateTier .input-group {
+  display: flex;
+  align-items: center;
+}
+
+.CalculateTier input {
+  width: calc(100% - 150px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.CalculateTier button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width:130px;
+}
+
+.CalculateTier button:hover {
+  background-color: #0056b3;
+}
+
+.resultbox {
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: grey;
   color: white;
+  transition: left 0.3s ease;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar.open {
+  left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
