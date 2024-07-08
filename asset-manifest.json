@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KartDrift-InfoPage/static/css/main.38ea0c9d.css",
+    "main.js": "/KartDrift-InfoPage/static/js/main.2c002a69.js",
+    "static/js/453.ad6eb26e.chunk.js": "/KartDrift-InfoPage/static/js/453.ad6eb26e.chunk.js",
+    "index.html": "/KartDrift-InfoPage/index.html",
+    "main.38ea0c9d.css.map": "/KartDrift-InfoPage/static/css/main.38ea0c9d.css.map",
+    "main.2c002a69.js.map": "/KartDrift-InfoPage/static/js/main.2c002a69.js.map",
+    "453.ad6eb26e.chunk.js.map": "/KartDrift-InfoPage/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38ea0c9d.css",
+    "static/js/main.2c002a69.js"
+  ]
+}
