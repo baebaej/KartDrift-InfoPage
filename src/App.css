@@ -7,13 +7,23 @@
 }
 
 .HeaderFrame {
-  height: 10%;
+  height: 60px;
   width: 100%;
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: absolute; /* Position absolutely to center it within the HeaderFrame */
+  left: 50%;
+  transform: translateX(-50%); /* Center the image horizontally */
+}
+
+.HeaderFrame img {
+  height: auto; /* Adjust as needed */
+  max-height: 100%; /* Ensure the image fits within the header height */
 }
 
 .ContentFrame {
@@ -28,11 +38,57 @@
 .tileCss {
   width: calc(100% - 40px);
   height: 100%;
-  padding: 20px;
+  padding: 25px;
+  padding-top: 10px;
   margin-bottom: 20px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center; /* 자식 요소의 텍스트를 중앙 정렬 */
+  margin: 15px;
+}
+
+.loading img {
+  max-width: 100%; /* 부모 요소의 너비를 넘지 않도록 설정 */
+  height: auto; /* 비율 유지 */
+}
+
+
+.YoutubeTable {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width:100%;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.VideoTile{
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;  
+  padding: 10px;
+  height: 400px;
+  margin: 10px;
+
+  cursor: pointer;
+}
+
+.thumbnail{
+  height: fit-content;
+}
+
+.videoTitle{
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .OurGameRank {
@@ -40,11 +96,79 @@
 }
 
 .GameRankTable {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  
+}
+.GameTile{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding:10px;
+
+  align-items: center;
+
+  background-color:#f9f9f9;
+
+  
+}
+.rank{
+  margin-right: 20px;
+  font-size:x-large;
+  color:#0056b3;
+  font-weight: bold ;
+}
+.gameimg{
+  margin-right: 20px;
+
+}
+.gamename{
+  font-size: larger;
+}
+
+
+
+.TierTable{
+  display: flex;
+  flex-direction: column;
   height: 200px;
   overflow-y: auto;
-  border: 1px solid #ccc;
   border-radius: 10px;
+  padding: 10px;
 }
+.TierTile{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding:5px;
+
+  align-items: center;
+
+  background-color:#f9f9f9;
+
+  height: fit-content;
+}
+.tiername{
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.tierpoints{
+  margin-right: 15px;
+}
+.tierimg{
+  margin-right: 15px;
+
+}
+
+
 
 .RankGameDday {
   background-color: white;
@@ -86,7 +210,7 @@
 .resultbox {
   width: 100%;
   height: 100px;
-  background-color: aquamarine;
+  background-color: #e1f5fe;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,6 +218,10 @@
   font-size: 1.2em;
   font-weight: bold;
 }
+
+
+
+
 
 .sidebar {
   position: absolute;
