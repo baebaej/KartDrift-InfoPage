@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KartDrift-InfoPage/static/css/main.ed719b9d.css",
-    "main.js": "/KartDrift-InfoPage/static/js/main.680cae79.js",
+    "main.js": "/KartDrift-InfoPage/static/js/main.ba55f37b.js",
     "static/js/453.ad6eb26e.chunk.js": "/KartDrift-InfoPage/static/js/453.ad6eb26e.chunk.js",
     "static/media/진행중.gif": "/KartDrift-InfoPage/static/media/진행중.f50e3830a55269f8bd36.gif",
     "static/media/그랜드마스터3.webp": "/KartDrift-InfoPage/static/media/그랜드마스터3.93ddae6de24ffdb3cf07.webp",
@@ -27,11 +27,11 @@
     "static/media/브론즈2.webp": "/KartDrift-InfoPage/static/media/브론즈2.c1e3a334585ab0b506c7.webp",
     "index.html": "/KartDrift-InfoPage/index.html",
     "main.ed719b9d.css.map": "/KartDrift-InfoPage/static/css/main.ed719b9d.css.map",
-    "main.680cae79.js.map": "/KartDrift-InfoPage/static/js/main.680cae79.js.map",
+    "main.ba55f37b.js.map": "/KartDrift-InfoPage/static/js/main.ba55f37b.js.map",
     "453.ad6eb26e.chunk.js.map": "/KartDrift-InfoPage/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed719b9d.css",
-    "static/js/main.680cae79.js"
+    "static/js/main.ba55f37b.js"
   ]
 }
