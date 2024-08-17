@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KartDrift-InfoPage/static/css/main.d97c4b92.css",
-    "main.js": "/KartDrift-InfoPage/static/js/main.35f93b29.js",
+    "main.js": "/KartDrift-InfoPage/static/js/main.95141a7f.js",
     "static/js/453.99dcf01f.chunk.js": "/KartDrift-InfoPage/static/js/453.99dcf01f.chunk.js",
     "static/media/스피드전.png": "/KartDrift-InfoPage/static/media/스피드전.807d244d83a0e9d6434e.png",
     "static/media/아이템전.png": "/KartDrift-InfoPage/static/media/아이템전.ea07c056a019184e6ffa.png",
@@ -61,11 +61,11 @@
     "static/media/검은장갑 두손가락.webp": "/KartDrift-InfoPage/static/media/검은장갑 두손가락.bc897c921d67e4cf3835.webp",
     "static/media/검은장갑 한손가락.webp": "/KartDrift-InfoPage/static/media/검은장갑 한손가락.ad18f701388499005dae.webp",
     "main.d97c4b92.css.map": "/KartDrift-InfoPage/static/css/main.d97c4b92.css.map",
-    "main.35f93b29.js.map": "/KartDrift-InfoPage/static/js/main.35f93b29.js.map",
+    "main.95141a7f.js.map": "/KartDrift-InfoPage/static/js/main.95141a7f.js.map",
     "453.99dcf01f.chunk.js.map": "/KartDrift-InfoPage/static/js/453.99dcf01f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d97c4b92.css",
-    "static/js/main.35f93b29.js"
+    "static/js/main.95141a7f.js"
   ]
 }
