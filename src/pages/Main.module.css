@@ -1,8 +1,4 @@
-body {
-  font-family: "SUITE", sans-serif;
-}
-
-.App {
+.Main {
   height: 100vh;
   width: 100vw;
   display: flex;
