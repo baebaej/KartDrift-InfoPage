@@ -6,7 +6,7 @@
 
 https://github.com/baebaej/KartDrift-InfoPage.git
 
-### 지원하는 기능
+## 지원하는 기능
 
 - 게임메카에서 스크래핑한 게임 순위 정보 표시
 - 등급전 일정 안내
@@ -16,7 +16,7 @@ https://github.com/baebaej/KartDrift-InfoPage.git
 - 카트라이더 드리프트 관련 뉴스 기사
 - 탭 메뉴를 통한 관련 사이트 접근 용이
 
-### 실행 방법
+## 실행 방법
 
 npm install 
 
