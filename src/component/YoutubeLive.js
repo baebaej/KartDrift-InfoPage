@@ -1,18 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 
-import logo from '../img/logo.png'
+import youtube from '../img/유튜브.jpg'
 import loading from '../img/진행중.gif'
 
 
 function VideoTile({video}){
 
   const videolink = "https://www.youtube.com/watch?v=" + video.videoId;
-  console.log(videolink)
 
   const handleButtonClick = () => {
     window.open(videolink, '_blank');
 };
+
+function formatISODate(isoDate) {
+  // Date 객체를 생성합니다.
+  const date = new Date(isoDate);
+  
+  // 년, 월, 일, 시간, 분을 추출합니다.
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작하므로 1을 더합니다.
+  const day = String(date.getDate()).padStart(2, '0');  //padStart : 문자열의 길이를 2로 맞춰주고 부족한 문자는 0으로 채움
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  
+  // 포맷팅된 문자열을 반환합니다.
+  return `${year}.${month}.${day} ${hours}:${minutes}`;
+}
 
   return(
     <div>
@@ -25,7 +39,7 @@ function VideoTile({video}){
           {video.title}
         </div>
         <div className='videoUploader'>
-          {video.channelTitle} | {video.publishedAt}
+          {video.channelTitle} | {formatISODate(video.publishedAt)}
         </div>
 
       </div>
@@ -104,7 +118,7 @@ function YoutubeTable() {
     useEffect(() => {
       fetchGameRankings();
   
-    },[]);
+    },[]);  //빈 배열을 컴포넌트가 처음 렌더링 되었을 때 한 번만 실행
   
     if (isLoaded) {
       return (
@@ -131,13 +145,17 @@ function YoutubeTable() {
   
     return(
       <div className='tileCss OurGameRank'>
-        <h2>
+        <h1>
           최신 유튜브 영상을 만나보세요
-        </h2>
-        <p>현재 유튜브에 업로드된 카트라이더 드리프트 관련 최신 영상입니다.</p>
+        </h1>
+        <p>현재 유튜브에 업로드된 카트라이더: 드리프트 관련 최신 영상입니다.</p>
         <div>
           <YoutubeTable/>
         </div>
+        <div style={{ display: "flex", alignItems: "center", marginTop:'15px'}}>
+          <>Powered by <img src={youtube} alt="YoutubeLogo" style={{ width: "100px", marginLeft:"7px"}} /></> 
+        </div>
+
       </div>
     )
   }

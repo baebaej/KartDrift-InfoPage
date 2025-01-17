@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 
-import logo from '../img/logo.png'
+import gamemeca from '../img/게임메카.gif'
 import loading from '../img/진행중.gif'
 
 
@@ -64,7 +64,7 @@ function GameRankTable({ setKartRank, setKartImg }) {
         // 카트라이더 드리프트의 순위 설정
         data.forEach((game, index) => {
           if (game.name === '카트라이더 드리프트') {
-            setKartRank(index + 1);
+            setKartRank(index);
             console.log('이미지경로:', game.icon)
             setKartImg(game.icon);
           }
@@ -114,14 +114,20 @@ function GameRankTable({ setKartRank, setKartImg }) {
   
     return(
       <div className='tileCss OurGameRank'>
-        <h2>
+        <h1>
           우리 게임 순위는?
-        </h2>
+        </h1>
+        
         <p>현재 게임메카에서 제공하고 있는 주간 게임 순위 데이터입니다. 매주 수요일에 업데이트됩니다.</p>
         <div>
           <GameRankTable setKartRank = {setKartRank} setKartImg = {setKartImg}/>
           {kartRank &&<GameTile game = {gameData} index = {kartRank}/>}
         </div>
+        <div style={{ display: "flex", alignItems: "center", marginTop:'15px'}}>
+          <>Powered by <img src={gamemeca} alt="GameMecaLogo" style={{ width: "100px", marginLeft:"7px"}} /></> 
+        </div>
+        
+
       </div>
     )
   }

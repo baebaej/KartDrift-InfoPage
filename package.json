@@ -13,6 +13,7 @@
     "crypto": "^1.0.1",
     "customize-cra": "^1.0.0",
     "http": "^0.0.1-security",
+    "http-proxy-middleware": "^3.0.0",
     "net": "^1.0.2",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
@@ -54,5 +55,8 @@
     ]
   },
   "proxy": "https://www.gamemeca.com/ranking.php",
-  "homepage": "https://bam-j.github.io/pages/"
+  "homepage": "https://baebaej.github.io/KartDrift-InfoPage/",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
