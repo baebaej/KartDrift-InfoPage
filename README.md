@@ -2,6 +2,10 @@
 
 2024년 여름방학에 개인적으로 진행한 Kartrider:Drift TMI 사이트입니다.
 
+## GitHub
+
+https://github.com/baebaej/KartDrift-InfoPage.git
+
 ### 지원하는 기능
 
 - 게임메카에서 스크래핑한 게임 순위 정보 표시
@@ -22,6 +26,7 @@ npm start
 
 좌측 탭 메뉴에서 프록시 설정하기 → Request temporary access to the demo server 를 눌러준 후 새로고침하면 정상적으로 화면이 표시됩니다.
 
+## 실행 화면
 ![스크린샷 2025-01-18 003320](https://github.com/user-attachments/assets/b6e6a612-6d63-49e3-84b3-c2ed72d658d5)
 ![스크린샷 2025-01-18 003348](https://github.com/user-attachments/assets/d7467dea-a73f-4bcd-ab84-ceb45d2c4b35)
 ![스크린샷 2025-01-18 003410](https://github.com/user-attachments/assets/63dd660b-63c2-49e2-8ee5-68ca5cf83862)
