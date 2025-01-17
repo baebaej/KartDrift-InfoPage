@@ -6,8 +6,8 @@ import loading from '../img/진행중.gif'
 
 
 function RankGameDday(){
-    const [startDay, setStartDay] = useState(new Date('2024-05-16'));
-    const [endDay, setEndDay] = useState(new Date('2024-08-15'));
+    const [startDay, setStartDay] = useState(new Date('2024-08-29'));
+    const [endDay, setEndDay] = useState(new Date('2099-08-29'));
     const [remainDay, setRemainDay] = useState(0);
   
   
@@ -19,15 +19,15 @@ function RankGameDday(){
   
     return(
       <div className='tileCss RankGameDday'>
-        <h2>
-          2nd 등급전 진행 중!
-        </h2>
+        <h1>
+          3rd 등급전 준비 중!
+        </h1>
         <div>
           <><strong>시즌 시작일</strong> </><>{startDay.toLocaleDateString()}</><br/><br/>
           <><strong>시즌 종료일</strong> </><>{endDay.toLocaleDateString()} 오전 8시 59분 (UTC +9)</><br/><br/>
           <strong>남은 날짜</strong>
       <span style={{ color: 'red', fontWeight: 'bold', marginLeft: '20px' }}>
-        D-{remainDay}
+        등급전이 아직 시작되지 않았습니다!
       </span>          </div>
       </div>
     )

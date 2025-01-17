@@ -75,10 +75,11 @@
   border-radius: 10px;
   width: 300px;  
   padding: 10px;
-  height: 400px;
+  height: 350px;
   margin: 10px;
 
   cursor: pointer;
+  overflow: auto;
 }
 
 .thumbnail{
@@ -86,9 +87,13 @@
 }
 
 .videoTitle{
-  font-size: x-large;
+  font-size: 130%;
   font-weight: bold;
   margin-bottom: 10px;
+}
+.videoUploader{
+  font-size: 100%;
+  color:gray;
 }
 
 .OurGameRank {
@@ -115,12 +120,10 @@
   align-items: center;
 
   background-color:#f9f9f9;
-
-  
 }
 .rank{
   margin-right: 20px;
-  font-size:x-large;
+  font-size:150%;
   color:#0056b3;
   font-weight: bold ;
 }
@@ -129,7 +132,72 @@
 
 }
 .gamename{
-  font-size: larger;
+  font-size: 100%;
+}
+
+
+.NoticeTile{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding:10px;
+  height: 50px;
+  cursor: pointer;
+
+  align-items: center;
+
+  background-color:#f9f9f9;
+  overflow:hidden;
+
+}
+
+.NewsTile{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding:10px;
+  height:fit-content;
+  cursor: pointer;
+
+  align-items: center;
+
+  background-color:#f9f9f9;
+  overflow:hidden;
+
+}
+.index{
+  margin-right: 2%;
+  margin-left: 1%;
+
+  font-size:110%;
+  color:#0056b3;
+}
+.newsbox{
+  display: flex;
+  flex-direction:column;
+}
+.noticeTitle{
+  font-size: 110%;
+  font-weight: bold;
+
+}
+.newsTitle{
+  font-size: 110%;
+  font-weight: bold;
+  margin-bottom: 1%;
+
+}
+.newsContext{
+  font-size: 100%;
+  color:gray;
+}
+.date {
+  margin-left: auto;
+  text-align: right;
+  font-size: 90%;
+  color:gray;
 }
 
 
@@ -139,8 +207,11 @@
   flex-direction: column;
   height: 200px;
   overflow-y: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
+  background-color: white;
+  width: 70%;
+  opacity: 0.9; /* 요소 전체를 반투명하게 */
 }
 .TierTile{
   display: flex;
@@ -156,12 +227,13 @@
   height: fit-content;
 }
 .tiername{
-  font-size: larger;
+  font-size: 120%;
   font-weight: bold;
   margin-right: 15px;
 }
 .tierpoints{
   margin-right: 15px;
+  font-size: 100%;
 }
 .tierimg{
   margin-right: 15px;
@@ -182,6 +254,8 @@
 .CalculateTier .input-group {
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .CalculateTier input {
@@ -218,7 +292,12 @@
   font-size: 1.2em;
   font-weight: bold;
 }
-
+.speed{
+  background-color: #e1f5fe;
+}
+.item{
+  background-color: beige;
+}
 
 
 
@@ -226,14 +305,15 @@
 .sidebar {
   position: absolute;
   top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
+  left: -280px;
+  width: 270px;
+  height:fit-content;
+  min-height: 100%;
   background-color: grey;
   color: white;
   transition: left 0.3s ease;
   padding-top: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar.open {
@@ -267,4 +347,42 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+
+.menu {
+  position: absolute; /* 절대 위치를 사용하여 버튼 바로 아래에 표시 */
+  top: 60px; /* 버튼 아래로 적절한 거리 (버튼 높이에 따라 조정) */
+  left: 4px;
+  width:max-content; /* 원하는 메뉴 너비 */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0; /* 메뉴가 닫혀 있을 때 높이를 0으로 설정 */
+  overflow: hidden; /* 슬라이드 애니메이션 시 내용 숨김 */
+  opacity: 0;
+  z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.menu.open {
+  max-height: 200px; /* 메뉴가 열릴 때의 최대 높이 (항목 개수에 따라 조정) */
+  opacity: 1;
+}
+
+.menu-content {
+  padding: 10px;
+}
+
+.menu p {
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.menu p:hover {
+  color: #007bff; /* Hover 색상 변경 */
 }
